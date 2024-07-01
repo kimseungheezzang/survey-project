@@ -5,6 +5,7 @@
     font-style: normal;
 }
 .header {
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     font-family: EF_jejudoldam;
@@ -95,4 +96,11 @@
     background-color: peachpuff;
     height: 50px;
     width: 30%;
+}
+
+@media (max-width: 800px) {
+    .media {
+        width: 412px;
+        height: 925px;
+    }
 }

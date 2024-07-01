@@ -1,7 +1,8 @@
 'use client'
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-import { pickObject } from "@/lib/features/place/placeSlice";
+import { pickPlace } from "@/lib/features/place/placeSlice";
+
 
 
 export default function ThirdPage() {
@@ -10,7 +11,8 @@ export default function ThirdPage() {
     const router = useRouter()
 
     const handlePick = (name, answer) => {
-        dispatch(pickObject({ name, answer }));
+        dispatch(pickPlace({ name, answer }));
+        console.log(pickPlace({name, answer}))
         router.push(`/result`)
     }
 

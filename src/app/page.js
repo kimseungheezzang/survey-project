@@ -5,7 +5,7 @@ import {useRouter} from "next/navigation";
 export default function Home() {
     const router = useRouter();
     return (
-        <div>
+        <div className="media">
             <div className="header">
                 <h1>나만의 술집 찾기</h1>
             </div>
