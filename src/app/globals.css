@@ -104,3 +104,9 @@
         height: 925px;
     }
 }
+.my-element {
+
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+
+}

@@ -7,9 +7,10 @@ export default function SecondPage() {
     const dispatch = useDispatch();
     const { cards } = useSelector(state => state.card);
     // state 뒤에 reducer 이름으로 써야 함
-    const router = useRouter()
+    const router = useRouter();
     const handleOpenBread = (name, answer) => {
         dispatch(pickCard({ name, answer }));
+        console.log(pickCard({name,answer}))
         router.push(`/third`)
     }
 

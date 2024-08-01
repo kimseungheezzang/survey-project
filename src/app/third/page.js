@@ -8,7 +8,7 @@ import { pickPlace } from "@/lib/features/place/placeSlice";
 export default function ThirdPage() {
     const dispatch = useDispatch();
     const { objectPlaces } = useSelector(state => state.objectPlace);
-    const router = useRouter()
+    const router = useRouter();
 
     const handlePick = (name, answer) => {
         dispatch(pickPlace({ name, answer }));
@@ -19,7 +19,7 @@ export default function ThirdPage() {
     return (
         <div className="flex">
             <div className="headerBeer">
-                <h1>오늘은 어떤 종류의 술을 드실건가요 ?</h1>
+                <h1>오늘은 어떤 자리에서 드시나요 ?</h1>
                 <div>
                     <div className="beer">
                         {objectPlaces.map((objectPlace, index) => (
